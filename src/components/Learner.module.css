@@ -1,0 +1,38 @@
+.container {
+  border: 1px #ffffff66 solid;
+  border-radius: 8px;
+  padding: 30px 50px;
+  margin-bottom: 50px;
+}
+
+.container h2 {
+  font-size: 20px;
+  min-width: 129px;
+  height: fit-content;
+}
+
+.container h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  min-width: 129px;
+}
+
+.container p {
+  font-size: 15px;
+  color: #ffffffc6;
+  height: fit-content;
+}
+
+.info {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .info {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,4 +1,5 @@
 import { Score } from "./Score";
+import styles from "./Learner.module.css";
 
 type Props = {
   data: {
@@ -12,12 +13,13 @@ export const Learner = ({ data }: Props) => {
   const { name, bio, scores } = data;
 
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.info}>
         <h2>{name}</h2>
         <p>{bio}</p>
       </div>
       <div>
+        <h3>Grades</h3>
         {scores.map((score, i) => (
           <Score key={i} data={score} />
         ))}
